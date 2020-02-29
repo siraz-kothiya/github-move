@@ -17,8 +17,6 @@ namespace Course.API
         public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
-            //Test branch
-            //Further improvements.
             // migrate the database.  Best practice = in Main, using service scope....
             using (var scope = host.Services.CreateScope())
             {
