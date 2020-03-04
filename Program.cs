@@ -18,7 +18,7 @@ namespace Course.API
         {
             var host = CreateHostBuilder(args).Build();
             // migrate the database.  Best practice = in Main, using service scope....
-            //Testbranch4
+            
             using (var scope = host.Services.CreateScope())
             {
                 try
